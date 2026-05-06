@@ -5,7 +5,9 @@ function SimpleForm() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e) => {
+    //refresh stop krne ke liyaa
     e.preventDefault();
+
     console.log("Name:", name);
     console.log("Email:", email);
   };
@@ -26,6 +28,7 @@ function SimpleForm() {
         type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        
       />
       <br />
 
